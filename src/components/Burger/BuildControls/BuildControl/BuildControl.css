@@ -1,0 +1,226 @@
+.BuildControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.BuildControl button {
+  display: block;
+  font: inherit;
+  padding: 0px;
+  margin: 0 5px;
+  width: 25px;
+  border: 0px solid #ccc;
+  cursor: pointer;
+  outline: none;
+  border-radius: 100px;
+  font-weight: medium;
+  border-radius: 50px;
+}
+
+.BuildControl button:disabled {
+  cursor: not-allowed;
+  color: #fbc63f;
+  background: #c8161d;
+  box-shadow: inset -5px -5px 10px
+      #ac1319,
+    inset 5px 5px 10px #e41921;
+}
+
+.BuildControl button:hover:disabled {
+  cursor: not-allowed;
+  color: #fbc63f;
+  background: #c8161d;
+  box-shadow: inset -5px -5px 10px
+      #ac1319,
+    inset 5px 5px 10px #e41921;
+}
+
+.BuildControl .Less {
+  color: #fbc63f;
+  background: linear-gradient(
+    145deg,
+    #d6181f,
+    #b4141a
+  );
+  box-shadow: 6px 6px 12px #9e1117,
+    -6px -6px 12px #f21b23;
+}
+
+.BuildControl .More {
+  color: #fbc63f;
+  background: linear-gradient(
+    145deg,
+    #d6181f,
+    #b4141a
+  );
+  box-shadow: 6px 6px 12px #9e1117,
+    -6px -6px 12px #f21b23;
+}
+
+.BuildControl .Less:hover,
+.BuildControl .Less:active {
+  background: linear-gradient(
+    145deg,
+    #b4141a,
+    #d6181f
+  );
+  box-shadow: 6px 6px 12px #9e1117,
+    -6px -6px 12px #f21b23;
+  color: #fbc63f;
+}
+
+.BuildControl .More:hover,
+.BuildControl .More:active {
+  background: linear-gradient(
+    145deg,
+    #b4141a,
+    #d6181f
+  );
+  box-shadow: 6px 6px 12px #9e1117,
+    -6px -6px 12px #f21b23;
+  color: #fbc63f;
+}
+
+.Label {
+  padding: 5px;
+  font-weight: bold;
+  width: 50px;
+  font-size: 12px;
+  color: #fbc63f;
+}
+
+.Cost {
+  color: #fbc63f;
+  text-align: center;
+  padding: 5px;
+  width: 40px;
+  font-weight: 600;
+  margin: 0 5px;
+  font-size: 10px;
+  border-radius: 10px;
+  background: #c8161d;
+  box-shadow: inset 6px 6px 12px #9e1117,
+    inset -6px -6px 12px #f21b23;
+}
+
+.CostIngredient {
+  color: #2b2b2b;
+  text-align: center;
+  padding: 5px;
+  width: 40px;
+  font-weight: 600;
+  margin: 0 5px;
+  font-size: 10px;
+  background: #fbc63f;
+}
+
+.AmountIngredient {
+  color: #fbc63f;
+  text-align: center;
+  padding: 5px;
+  width: 20px;
+  font-weight: 600;
+  margin: 0 15px;
+  font-size: 12px;
+  border-radius: 50%;
+  background: #c8161d;
+  box-shadow: inset 6px 6px 12px #9e1117,
+    inset -6px -6px 12px #f21b23;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .Label {
+    font-size: 14px;
+  }
+
+  .Cost {
+    font-size: 13px;
+  }
+
+  .CostIngredient {
+    font-size: 12px;
+  }
+
+  .AmountIngredient {
+    font-size: 12px;
+  }
+  .BuildControl button {
+    width: 25px;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .Label {
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .Cost {
+    font-size: 13px;
+  }
+
+  .CostIngredient {
+    font-size: 13px;
+  }
+
+  .AmountIngredient {
+    font-size: 13px;
+  }
+  .BuildControl button {
+    width: 25px;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 600px) {
+  .BuildControl {
+    margin: 20px 0;
+    display: flex;
+    justify-content: stretch;
+    padding: 10px;
+  }
+
+  .BuildControl:nth-last-of-type(1) {
+  }
+
+  .Cost {
+    text-align: center;
+    padding: 5px;
+    width: 40px;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 13px;
+  }
+
+  .Label {
+    padding: 5px 15px;
+    font-weight: bold;
+    width: 55px;
+    font-size: 16px;
+  }
+
+  .CostIngredient {
+    padding: 5px;
+    width: 40px;
+    margin: 0 5px;
+    font-size: 13px;
+  }
+
+  .AmountIngredient {
+    padding: 5px;
+    width: 20px;
+    margin: 0 15px;
+    font-size: 13px;
+  }
+
+  .BuildControl button {
+    width: 25px;
+  }
+}

@@ -1,0 +1,75 @@
+.BreadBottom {
+  height: 13%;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  margin: 0.5% auto;
+  background-image: url("../../../assets/images/bottom-bread.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.BreadTop {
+  height: 20%;
+  width: 100%;
+  margin: 0.5% auto;
+  background-image: url("../../../assets/images/top-bread.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.Meat {
+  width: 100%;
+  height: 12.5%;
+  margin: auto;
+  background-image: url("../../../assets/images/burger.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: opacity 0.5s;
+}
+
+.Cheese {
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  background-image: url("../../../assets/images/cheese.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: opacity 0.5s;
+}
+
+.Salad {
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  background-image: url("../../../assets/images/salad.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: opacity 0.5s;
+}
+
+.Bacon {
+  height: 10%;
+  width: 100%;
+  margin: auto;
+  background-image: url("../../../assets/images/bacon.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: opacity 0.5s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,47 @@
+.Burger {
+  width: 90%;
+  margin: 0 auto;
+  height: 35vh;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 100%;
+  background: #c8161d;
+  box-shadow: inset -35px -35px 70px
+      #ac1319,
+    inset 35px 35px 70px #e41921;
+  color: #fbc63f;
+  padding: 15px 0;
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .Burger {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 600px) {
+  .Burger {
+    width: 35%;
+    float: left;
+    height: 75vh;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2.5%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #fbc63f;
+  }
+}

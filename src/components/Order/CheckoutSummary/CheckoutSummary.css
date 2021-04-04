@@ -1,0 +1,81 @@
+.CheckoutSummary {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  color: #fbc63f;
+}
+
+.Message {
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1.DesktopOnly {
+  display: none;
+}
+
+h1.MobileOnly {
+  font-size: 1.5rem;
+  padding: 15px 15px 0 15px;
+  text-align: center;
+}
+
+.Message p {
+  font-size: 13px;
+  line-height: 2.2em;
+  letter-spacing: 0.5px;
+}
+
+/* Laptop */
+@media (min-width: 800px) {
+  .CheckoutSummary {
+    width: 100%;
+    float: left;
+    text-align: left;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .Burger {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    display: fixed;
+  }
+
+  .Message {
+    box-sizing: border-box;
+    text-align: left;
+    color: #fbc63f;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    width: 25%;
+  }
+
+  h1.DesktopOnly {
+    display: block;
+    letter-spacing: 0.5px;
+    font-size: 1.8rem;
+  }
+
+  .Message p {
+    line-height: 2.2em;
+    letter-spacing: 0.5px;
+    margin: 25px 0 50px 0;
+    font-size: 15px;
+  }
+
+  h1.MobileOnly {
+    display: none;
+  }
+}

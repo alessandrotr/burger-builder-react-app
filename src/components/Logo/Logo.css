@@ -1,0 +1,12 @@
+.Logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Link {
+  color: #fbc63f;
+  text-decoration: none;
+}
+.Logo img {
+  height: 100%;
+}

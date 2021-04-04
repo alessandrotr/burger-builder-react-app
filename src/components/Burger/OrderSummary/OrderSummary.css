@@ -1,0 +1,52 @@
+.OrderSummary {
+  background: transparent;
+}
+
+.OrderSummary Button {
+  margin-left: 20px;
+}
+
+.OrderSummary h2 {
+  padding: 10px 15px;
+  margin-top: 0;
+  color: #fbc63f;
+}
+
+.OrderSummary p {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #fbc63f;
+}
+
+.OrderSummary ul {
+  width: auto;
+  margin-left: -40px;
+}
+
+.OrderSummary ul li {
+  list-style: none;
+  padding: 10px 20px;
+  color: #fbc63f;
+  background: linear-gradient(
+    315deg,
+    #b4141a,
+    #d6181f
+  );
+  box-shadow: -16px -16px 32px #ac1319,
+    16px 16px 32px #e41921;
+  margin: 10px 0;
+}
+
+/* Iphone 6 +  */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .OrderSummary p {
+    font-size: 15px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1000px) and (min-height: 600px) {
+  .OrderSummary p {
+    font-size: 15px;
+  }
+}

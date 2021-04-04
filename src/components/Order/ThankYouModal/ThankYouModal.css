@@ -1,0 +1,10 @@
+.ThankYouModal {
+  background-color: #c8161d;
+  color: #fbc63f;
+}
+
+.ThankYouModal h2 {
+  padding: 10px 15px;
+  margin-top: 0;
+  color: #fbc63f;
+}

@@ -1,0 +1,43 @@
+.Auth {
+  margin: auto;
+  width: 85%;
+  box-sizing: border-box;
+  text-align: right;
+  color: #fbc63f;
+}
+
+.Auth input {
+  display: block;
+  color: #fbc63f;
+}
+
+.AuthContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100vh;
+  margin-top: -60px;
+  align-content: center;
+}
+
+.Auth h1 {
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .Auth {
+    width: 60%;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: right;
+  }
+
+  .Auth h1 {
+    font-size: 2.5rem;
+  }
+
+  .AuthContainer {
+    margin-top: -56px;
+  }
+}

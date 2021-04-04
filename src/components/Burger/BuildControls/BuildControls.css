@@ -1,0 +1,134 @@
+.BuildControls {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  background-color: #c8161d;
+  box-sizing: border-box;
+  height: 47vh;
+}
+
+.OrderButton {
+  outline: none;
+  cursor: pointer;
+  color: #fbc63f;
+  font-family: inherit;
+  font-size: 0.8em;
+  padding: 10px 25px;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: auto;
+  background: linear-gradient(
+    145deg,
+    #d6181f,
+    #b4141a
+  );
+  box-shadow: 6px 6px 12px #9e1117,
+    -6px -6px 12px #f21b23;
+  border-radius: 10px;
+}
+
+.OrderButton:hover,
+.OrderButton:active {
+  color: #fbc63f;
+  border-radius: 10px;
+  background: linear-gradient(
+    145deg,
+    #b4141a,
+    #d6181f
+  );
+  box-shadow: 6px 6px 12px #9e1117,
+    -6px -6px 12px #f21b23;
+}
+
+.OrderButton:disabled {
+  color: #fbc63f;
+  cursor: not-allowed;
+  border-radius: 10px;
+  background: #c8161d;
+  box-shadow: inset 6px 6px 12px #9e1117,
+    inset -6px -6px 12px #f21b23;
+}
+
+.OrderButton:not(:disabled) {
+  animation: enable 0.3s linear;
+}
+
+.BuildControls span {
+  color: #fbc63f;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #c8161d;
+  box-shadow: inset 16px 16px 32px
+      #9e1117,
+    inset -16px -16px 32px #f21b23;
+}
+.titleDesktop {
+  display: none;
+}
+
+@keyframes enable {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .BuildControls {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 600px) {
+  .BuildControls {
+    width: 30%;
+    height: 90vh;
+    text-align: left;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+  }
+
+  .titleDesktop {
+    display: block;
+    color: #fbc63f;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+
+  .BuildControls span {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fbc63f;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background: #c8161d;
+    box-shadow: inset 16px 16px 32px
+        #9e1117,
+      inset -16px -16px 32px #f21b23;
+  }
+
+  .OrderButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    width: auto;
+  }
+}

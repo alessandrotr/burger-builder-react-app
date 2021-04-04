@@ -1,0 +1,35 @@
+.DrawerToggle {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: left;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.DrawerToggle div {
+  width: 90%;
+  height: 3px;
+  background: linear-gradient(
+    145deg,
+    #ffd443,
+    #e2b239
+  );
+  box-shadow: 20px 20px 60px #d5a836,
+    -20px -20px 60px #ffe448;
+}
+
+.DrawerToggle div:nth-child(2) {
+  width: 60%;
+  height: 3px;
+  background-color: #fbc63f;
+}
+
+@media (min-width: 500px) {
+  .DrawerToggle {
+    display: none;
+  }
+}

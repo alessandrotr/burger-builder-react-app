@@ -1,0 +1,85 @@
+.Input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fbc63f;
+}
+
+.Label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.InputElement {
+  color: #fbc63f;
+  outline: none;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #fbc63f;
+  background-color: #c8161d;
+}
+
+.InputElement::placeholder {
+  color: #fbc63f;
+}
+
+.Select {
+  color: #fbc63f;
+  outline: none;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #fbc63f;
+  background-color: #c8161d;
+}
+
+.InputElement:focus {
+  border-radius: 0px;
+  background: linear-gradient(
+    315deg,
+    #b4141a,
+    #d6181f
+  );
+  box-shadow: -5px -5px 10px #ac1319,
+    5px 5px 10px #e41921;
+}
+
+.Invalid {
+  border-bottom: 2px solid #ff0000;
+  transition: 0.2s;
+}
+
+.Invalid::after {
+  content: "X";
+  text-align: right;
+  color: #d00404;
+  font-size: 200px;
+}
+
+.Valid {
+  border-bottom: 2px solid #7fda00;
+  transition: 0.2s;
+}
+
+.ValidationError {
+  color: #fbc63f;
+  text-align: left;
+  animation: opacity 0.8s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
